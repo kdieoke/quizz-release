@@ -277,8 +277,16 @@ p{
 
 #advice{
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    
+    height: 4vh;
+    width: 45vw;
+
+    top: 10vh;
+    left: 28vw;
+
+    display: grid;
+    align-items: center;
+    text-align: center;
 
     color: black;
     font-size: 3.125vh;
