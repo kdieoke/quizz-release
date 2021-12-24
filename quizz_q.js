@@ -635,7 +635,7 @@ let questions = {
             ansD: "Königsgiraffe",
             correct: "A",
             info: 'Während der Blauwal das größte Tier der Erde (nicht Organismus) ist, belegt das weiße Nashorn lediglich den vierten Platz (nach 3 Elefantenarten) in der Liste der schwersten Landtiere.',
-            b_img: "löwenbaby.jpg" 
+            b_img: "loewenbaby.jpg" 
         },
         q23:{
             name: "q23",
@@ -658,7 +658,7 @@ let questions = {
             ansD: "720 Meter",
             correct: "B",
             info: "Das höchste menschengemachte Objekt ist der Burj Khalifa. Der 829 Meter hohe Wolkenkratzer steht in Dubai, den Vereinigten Arabischen Emiraten",
-            b_img: "hochhäuser.jpg" 
+            b_img: "hochhaeuser.jpg" 
         },
         q25:{
             name: "q25",
@@ -705,7 +705,7 @@ let questions = {
             ansC: "1,37 Euro",
             ansD: "1,13 Euro",
             correct: "D",
-            b_img: "währungen.png" 
+            b_img: "waehrungen.png" 
         },       
         q29:{
             name: "q29",
@@ -716,7 +716,7 @@ let questions = {
             ansC: "0,12 Pfund",
             ansD: "0,84 Pfund",
             correct: "D",
-            b_img: "währungen.png" 
+            b_img: "waehrungen.png" 
         },
         q30:{
             name: "q30",
@@ -728,7 +728,7 @@ let questions = {
             ansD: "Kröten",
             correct: "B",
             info: "Von Zeit zu Zeit sollt man auch mal auf die Rechtschreibung achten!",
-            b_img: "geldbündelDollar.jpg" 
+            b_img: "geldbuendelDollar.jpg" 
         },
         amount: 30
     },
@@ -744,7 +744,7 @@ let questions = {
             ansD: "Stockholm",
             correct: "A",
             info: 'Oslo = Norwegen, Kopenhagen = Dänemark, Dublin = Irland und Stockholm = Schweden.',
-            b_img: "hochhäuser.jpg"
+            b_img: "hochhaeuser.jpg"
         },
         q2:{
             name: "q2",
@@ -780,7 +780,7 @@ let questions = {
             ansD: "Chloroplast",
             correct: "C",
             info: "Während Chlorophyll die Blätter grün färbt, färbt Chromoplast die Blätter gelb, rot oder orange.",
-            b_img: "grünBlatt.jpg"
+            b_img: "gruenBlatt.jpg"
         },
         q5:{
             name: "q5",
@@ -887,7 +887,7 @@ let questions = {
             q: "Worum handelt es sich in der Literatur bei 'Neologismus' (reheorisches Mittel) ",
             points: 1,
             ansA: "Beschönigung", 
-            ansB: "Wortneuschöpfung",
+            ansB: "Wortneuschaffung",
             ansC: "Übertreibung",
             ansD: "Verniedlichung",
             correct: "B",
@@ -939,7 +939,7 @@ let questions = {
             ansD: "Sahara",
             correct: "C",
             info: "Unter Wüste versteht man: Aufgrund von Trockenheit vegetationslose oder vegetationsarme Gebiete der Erde",
-            b_img: "ödland.jpg"
+            b_img: "oedland.jpg"
         },
         q8:{
             name: "q8",
@@ -989,9 +989,9 @@ let questions = {
             ansB: "Deutschland",
             ansC: "China",
             ansD: "Russland",
-            correct: "B",
+            correct: "A",
             info: "Ende großer Kaiserreiche von 1912 zu 1945: Kaiserreich China, Kaiserreich Russland, Kaiserreich Deutschland, Kaiserreich Japan.",
-            b_img: "cäsarBüste.jpg"
+            b_img: "caesarBueste.jpg"
         },
         q2:{
             name: "q2",
@@ -1015,7 +1015,7 @@ let questions = {
             ansD: "Verletzung des Magens",
             correct: "B",
             info: "Unter semantischer Sättigung versteht man den Bedeutungsverlust/Bedeutungswandel eines Wortes nach zu vielen Wiederholungen dieses Worts",
-            b_img: "bücherregal.jpg"
+            b_img: "buecherregal.jpg"
         },
         q4:{
             name: "q4",
@@ -1027,7 +1027,7 @@ let questions = {
             ansD: "Bertolt Brecht",
             correct: "A",
             info: "Welch ein grandioses Zitat!",
-            b_img: "bücherregal.jpg"
+            b_img: "buecherregal.jpg"
         },
         amount: 4
     },
@@ -1042,7 +1042,7 @@ let questions = {
             ansD: "so-viel",
             correct: "C",
             info: "Beide Schreibweisen werden heute gebraucht. Allerdings schreibt man 'soviel' nur wenn es sich um eine Konjunktion handelt",
-            b_img: "bücherregal.jpg"
+            b_img: "buecherregal.jpg"
         },
         q2:{
             name: "q2",
@@ -1065,7 +1065,7 @@ let questions = {
             ansD: "30.221.532 km^2",
             correct: "D",
             info: "Mit über 30 Millionen km^2 ist Afrika der zweitgrößte Kontinent der Erde.",
-            b_img: "afrikaWüste.jpg"
+            b_img: "afrikaWueste.jpg"
         },
         q4:{
             name: "q4",
@@ -1075,7 +1075,7 @@ let questions = {
             ansB: "Raumläufer",
             ansC: "Sternenschwimmer",
             ansD: "Sternenwandler",
-            correct: "D",
+            correct: "A",
             b_img: "astronaut.jpg"
         },
         amount: 4
