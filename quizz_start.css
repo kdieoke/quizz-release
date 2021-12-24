@@ -31,11 +31,12 @@ body{
  
 }
 
-.start{
+#btn{
     position: absolute;
 
     width: 40vw;
-    height: 12vh;
+    height: 3vh;
+
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3vh;
@@ -51,6 +52,13 @@ body{
     z-index: 10;
     
 }
+
+.start{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .S-box{
     position: absolute;
 
@@ -90,26 +98,6 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
-
-.start:hover{
-    position: relative;
-
-    width: 25vw;
-    height: 12vh;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 5vh;
-
-    background-image: none;
-    background-clip: none;
-    -webkit-background-clip: none;
-    -moz-background-clip: none;
-    -moz-text-fill-color: none;
-    -webkit-text-fill-color: none;
-
-    border: none;
-    z-index: 2;
-}
 
 .S-box:hover{
     position: absolute;

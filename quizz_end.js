@@ -1,5 +1,5 @@
-let btn = document.getElementById("score")
-let S_box = document.getElementById("S-box")
+let btn = document.getElementById("S-box")
+let txt = document.getElementById("btn")
 let cp = document.getElementById("catchphrase")
 
 let score = localStorage.getItem("points")
@@ -12,7 +12,7 @@ if(time > 120) unit = 'min', time = Math.round(time/60), converted = true;
 
 //get score
 btn.addEventListener("click", function(){
-btn.classList.remove("score"), S_box.classList.remove("S-box")
+btn.classList.remove("score"), btn.classList.remove("S-box")
 void this.offsetHeight;
 btn.classList.add("score-revealed")
 
