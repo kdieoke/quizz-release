@@ -1,5 +1,5 @@
 html{
-    width: 100vw;
+    width: 97vw;
 }
 body{
     background: rgb(27, 27, 27);
@@ -156,5 +156,12 @@ body{
 }
 
 .u{
-    text-decoration: underline rgb(255, 147, 45);
+    text-decoration-color: rgb(255, 147, 45);
+    text-decoration-line: underline;
+
+    -webkit-text-decoration-color: rgb(255, 147, 45);
+    -webkit-text-decoration-line: underline;
+
+    -moz-text-decoration-color: rgb(255, 147, 45);
+    -moz-text-decoration-line: underline;
 }
