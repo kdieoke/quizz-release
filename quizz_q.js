@@ -406,7 +406,7 @@ let questions = {
         q2:{
             name: "q2",
             q: "Wie viele Nachbarländer hat Deutschland?",
-            points: 1,
+            points: 2,
             ansA: "8", 
             ansB: "12",
             ansC: "7",
@@ -430,7 +430,7 @@ let questions = {
         q4:{
             name: "q4",
             q: "Welcher Ozean ist der größte der Welt?",
-            points: 1,
+            points: 2,
             ansA: "Indischer Ozean", 
             ansB: "Pazifischer Ozean",
             ansC: "Nordpolarmeer",
@@ -453,7 +453,7 @@ let questions = {
         q6:{
             name: "q6",
             q: "Das englische Wort 'rural' meint?",
-            points: 1,
+            points: 2,
             ansA: "ruhig", 
             ansB: "(be)-herrschen",
             ansC: "radikal",
@@ -464,7 +464,7 @@ let questions = {
         q7:{
             name: "q7",
             q: "17 * 3 + 7 ergibt?",
-            points: 1,
+            points: 2,
             ansA: "68", 
             ansB: "58",
             ansC: "3 * 4^2 + 9",
@@ -487,7 +487,7 @@ let questions = {
         q9:{
             name: "q9",
             q: "Welcher dieser Filme erzielte das höchste Einspielergebnis (stand 2021)?",
-            points: 1,
+            points: 3,
             ansA: "Titanic", 
             ansB: "Avengers: Endgame",
             ansC: "Avatar - Aufbruch nach Pandora",
@@ -499,7 +499,7 @@ let questions = {
         q10:{
             name: "q10",
             q: "Worum handelt es sich bei einem 'meme' (englisch)?",
-            points: 1,
+            points: 2,
             ansA: "eine Imitation einer Person oder Situation", 
             ansB: "Ein Scherz",
             ansC: "ein Streich",
@@ -521,7 +521,7 @@ let questions = {
         q12:{
             name: "q12",
             q: "Wie viele Planeten beherbergt unser Sonnensystem?",
-            points: 1,
+            points: 2,
             ansA: "8", 
             ansB: "12",
             ansC: "7",
@@ -533,7 +533,7 @@ let questions = {
         q13:{
             name: "q13",
             q: "Das englishe Wort 'obvious' meint?",
-            points: 1,
+            points: 2,
             ansA: "offensichtlich", 
             ansB: "unwissend",
             ansC: "nervig",
@@ -544,7 +544,7 @@ let questions = {
         q14:{
             name: "q14",
             q: "Wie oft finden die Olympischen Spiele statt?",
-            points: 1,
+            points: 2,
             ansA: "alle 2 Jahre", 
             ansB: "viermal im Jahr",
             ansC: "alle 4 Jahre",
@@ -568,7 +568,7 @@ let questions = {
         q16:{
             name: "q16",
             q: "Welches dieser Länder liegt nicht auf dem Südamerikanischen Kontinent?",
-            points: 1,
+            points: 3,
             ansA: "Brasilien", 
             ansB: "Bolivien",
             ansC: "Argentinien",
@@ -580,7 +580,7 @@ let questions = {
         q17:{
             name: "q17",
             q: "Wie groß ist der Eiffelturm?",
-            points: 1,
+            points: 2,
             ansA: "415 Meter", 
             ansB: "324 Meter",
             ansC: "300 Meter",
@@ -592,7 +592,7 @@ let questions = {
         q18:{
             name: "q18",
             q: "Das englische Wort 'obvious' meint?",
-            points: 1,
+            points: 2,
             ansA: "offensichtlich", 
             ansB: "unwissend",
             ansC: "nervig",
@@ -650,7 +650,7 @@ let questions = {
         q23:{
             name: "q23",
             q: "Wie hoch ist der höchste Berg Deutschlands?",
-            points: 1,
+            points: 3,
             ansA: "2.412 Meter", 
             ansB: "2.962 Meter",
             ansC: "2.730 Meter",
@@ -661,7 +661,7 @@ let questions = {
         q24:{
             name: "q24",
             q: "Wie hoch ist der höchste Wolkenkratzer der Welt?",
-            points: 1,
+            points: 2,
             ansA: "800 Meter", 
             ansB: "829 Meter",
             ansC: "940 Meter",
@@ -673,7 +673,7 @@ let questions = {
         q25:{
             name: "q25",
             q: "Wann wurde Rom der Legende nach gegründet?",
-            points: 1,
+            points: 2,
             ansA: "112 vor Christus", 
             ansB: "753 vor Christus",
             ansC: "27 nach Christus",
@@ -697,7 +697,7 @@ let questions = {
         q27:{
             name: "q27",
             q: "Wobei handelt es sich bei 'CoC', 'LoL' und 'WoW'?",
-            points: 1,
+            points: 3,
             ansA: "Maßeinheiten", 
             ansB: "Automodelle",
             ansC: "Abkürzungen für Computerspiele",
@@ -709,24 +709,24 @@ let questions = {
         q28:{
             name: "q28",
             q: "Wie viele Us-Dollar sind ein Euro (stand 23.12.21, 13:04)?",
-            points: 1,
-            ansA: "1,24 Euro", 
-            ansB: "2 Euro",
-            ansC: "1,37 Euro",
-            ansD: "1,13 Euro",
+            points: 2,
+            ansA: "1,24 Usd", 
+            ansB: "2 Usd",
+            ansC: "1,37 Usd",
+            ansD: "1,13 Usd",
             correct: "D",
-            b_img: "waehrungen.png" 
+            b_img: "geldbuendelDollar.jpg" 
         },       
         q29:{
             name: "q29",
             q: "Wie viele Englische Pfund sind ein Euro (stand 23.12.21, 13:07)?",
-            points: 1,
+            points: 2,
             ansA: "17,34 Pfund", 
             ansB: "1,37 Pfund",
             ansC: "0,12 Pfund",
             ansD: "0,84 Pfund",
             correct: "D",
-            b_img: "waehrungen.png" 
+            b_img: "geldbuendelDollar.jpg" 
         },
         q30:{
             name: "q30",
@@ -747,7 +747,7 @@ let questions = {
         q1:{
             name: "q1",
             q: "Welche Stadt ist die Hauptstadt von Norwegen?",
-            points: 1,
+            points: 3,
             ansA: "Oslo", 
             ansB: "Kopenhagen",
             ansC: "Dublin",
@@ -759,7 +759,7 @@ let questions = {
         q2:{
             name: "q2",
             q: "Wie wird die richterliche Gewalt in Deutschland genannt?",
-            points: 1,
+            points: 3,
             ansA: "Legislative", 
             ansB: "Executive",
             ansC: "Judikative",
@@ -771,7 +771,7 @@ let questions = {
         q3:{
             name: "q3",
             q: "Wie lautet das chemische Zeichen für Silber?",
-            points: 1,
+            points: 3,
             ansA: "S", 
             ansB: "Sb",
             ansC: "Sv",
@@ -783,7 +783,7 @@ let questions = {
         q4:{
             name: "q4",
             q: "Welcher Stoff gibt Blättern ihre grüne Farbe?",
-            points: 1,
+            points: 4,
             ansA: "Kaliumhexacyanoferrat", 
             ansB: "Chromoplast",
             ansC: "Chlorophyll",
@@ -795,7 +795,7 @@ let questions = {
         q5:{
             name: "q5",
             q: "Wann wurde der Buchdruck erfunden?",
-            points: 1,
+            points: 3,
             ansA: "Mitte des 12. Jahrhunderts", 
             ansB: "Anfang des 14. Jahrhunderts",
             ansC: "Mitte des 15. Jahrhunderts",
@@ -807,7 +807,7 @@ let questions = {
         q6:{
             name: "q6",
             q: "Wie heißt das Pendant der 10 Gebote des Islam?",
-            points: 1,
+            points: 3,
             ansA: "Die 5 Säulen des Islam", 
             ansB: "Die 10 Gebote des Islam",
             ansC: "Die 7 Sünden",
@@ -818,7 +818,7 @@ let questions = {
         q7:{
             name: "q7",
             q: "Welches chemische Element steht im Periodensystem als 'Fe'?",
-            points: 1,
+            points: 2,
             ansA: "Chlor", 
             ansB: "Stickstoff",
             ansC: "Eisen",
@@ -830,7 +830,7 @@ let questions = {
         q8:{
             name: "q8",
             q: "In welchem Jahr wurde die deutsche Mauer erbaut?",
-            points: 1,
+            points: 3,
             ansA: "1949", 
             ansB: "1961",
             ansC: "1955",
@@ -842,7 +842,7 @@ let questions = {
         q9:{
             name: "q9",
             q: "In welchem historischen Krieg überquerte Hannibal mit seinen Elefanten die Alpen?",
-            points: 1,
+            points: 4,
             ansA: "1. punischer Krieg", 
             ansB: "2. punischer Krieg",
             ansC: "1. peloponnesischer Krieg",
@@ -854,7 +854,7 @@ let questions = {
         q10:{
             name: "q10",
             q: "Welche Flagge trägt die Farben Orange-Weiß-Grün (beachte Reihenfolge)?",
-            points: 1,
+            points: 4,
             ansA: "Äthiopien", 
             ansB: "Elfenbeinküste",
             ansC: "Irland",
@@ -871,7 +871,7 @@ let questions = {
         q1:{
             name: "q1",
             q: "Wer entdeckte Australien?",
-            points: 1,
+            points: 4,
             ansA: "Ferdinand Magellan", 
             ansB: "Galileo Galilei",
             ansC: "James Cook",
@@ -883,7 +883,7 @@ let questions = {
         q2:{
             name: "q2",
             q: "Wie viele Video-Aufrufe erreichte das Spiel Minecraft bisher auf YouTube?",
-            points: 1,
+            points: 4,
             ansA: "1.000.000.000.000", 
             ansB: "10.000.000.000.000",
             ansC: "50.000.000.000",
@@ -895,7 +895,7 @@ let questions = {
         q3:{
             name: "q3",
             q: "Worum handelt es sich in der Literatur bei 'Neologismus' (rehetorisches Mittel)?",
-            points: 1,
+            points: 4,
             ansA: "Beschönigung", 
             ansB: "Wortneuschaffung",
             ansC: "Übertreibung",
@@ -907,7 +907,7 @@ let questions = {
         q4:{
             name: "q4",
             q: "Wie nennt man die Zahl unter der Wurzel?",
-            points: 1,
+            points: 5,
             ansA: "Radikand", 
             ansB: "Quotient",
             ansC: "Exponent",
@@ -919,7 +919,7 @@ let questions = {
         q5:{
             name: "q5",
             q: "Welcher Staat ist kein Gründungsmitglied der EU?",
-            points: 1,
+            points: 4,
             ansA: "Belgien", 
             ansB: "Spanien",
             ansC: "Deutschland",
@@ -931,7 +931,7 @@ let questions = {
         q6:{
             name: "q6",
             q: "In welchem Jahr fanden die ersten offiziellen Paralympischen Spiele statt?",
-            points: 1,
+            points: 5,
             ansA: "1954", 
             ansB: "1962",
             ansC: "1960",
@@ -942,7 +942,7 @@ let questions = {
         q7:{
             name: "q7",
             q: "Welche ist die größte Wüste der Welt?",
-            points: 1,
+            points: 4,
             ansA: "Kalahari", 
             ansB: "Mojave-Wüste",
             ansC: "Antarktis",
@@ -954,7 +954,7 @@ let questions = {
         q8:{
             name: "q8",
             q: "Seit wann gibt es die deutsche Fußball-Bundesliga?",
-            points: 1,
+            points: 5,
             ansA: "30. Juni 1877", 
             ansB: "22. August 1958",
             ansC: "2. Januar 1964",
@@ -966,7 +966,7 @@ let questions = {
         q9:{
             name: "q9",
             q: "Welche ist die zweitgrößte Religion (Anzahl der Mitglieder)?",
-            points: 1,
+            points: 3,
             ansA: "Buddhismus", 
             ansB: "Islam",
             ansC: "Judentum",
@@ -978,7 +978,7 @@ let questions = {
         q10:{
             name: "q10",
             q: "Wie lautet der zweit-häufigste Straßenname in Deutschland?",
-            points: 1,
+            points: 5,
             ansA: "Bergstraße", 
             ansB: "Hauptstraße",
             ansC: "Schulstraße",
@@ -994,7 +994,7 @@ let questions = {
         q1:{
             name: "q1",
             q: "Welches Kaiserreich endete als letztes?",
-            points: 1,
+            points: 6,
             ansA: "Japan", 
             ansB: "Deutschland",
             ansC: "China",
@@ -1006,7 +1006,7 @@ let questions = {
         q2:{
             name: "q2",
             q: "Wie viele Werke schrieb Mozart",
-            points: 1,
+            points: 6,
             ansA: "über 250", 
             ansB: "ca. 100",
             ansC: "über 290",
@@ -1018,7 +1018,7 @@ let questions = {
         q3:{
             name: "q3",
             q: "Was versteht man unter 'semantische Sättigung'?",
-            points: 1,
+            points: 7,
             ansA: "Heiserkeit", 
             ansB: "Psychologisches Phänomen",
             ansC: "Medizinischer Ausdruck",
@@ -1030,7 +1030,7 @@ let questions = {
         q4:{
             name: "q4",
             q: "Wer soll angeblich gesagt haben: 'Ich kann garnicht so viel fressen, wie ich kotzen möchte'?",
-            points: 1,
+            points: 7,
             ansA: "Max Liebermann", 
             ansB: "Kurt Tucholsky",
             ansC: "Franz Mark",
@@ -1045,7 +1045,7 @@ let questions = {
         q1:{
             name: "q1",
             q: "wie schreibt man 's o v i e l' in 'Ich möchte [s o v i e l] schlafen wie möglich'?",
-            points: 1,
+            points: 7,
             ansA: "soviel", 
             ansB: "alles ist möglich",
             ansC: "so viel",
@@ -1057,7 +1057,7 @@ let questions = {
         q2:{
             name: "q2",
             q: "Wie heißt die Sonde, die 2015 Pluto erreichte?",
-            points: 1,
+            points: 7,
             ansA: "Kepler", 
             ansB: "New Horizons",
             ansC: "DSCOVR",
@@ -1068,7 +1068,7 @@ let questions = {
         q3:{
             name: "q3",
             q: "Wie groß ist Afrika?",
-            points: 1,
+            points: 9,
             ansA: "28.446.178 km^2", 
             ansB: "31.742.558 km^2",
             ansC: "29.612.413 km^2",
@@ -1080,7 +1080,7 @@ let questions = {
         q4:{
             name: "q4",
             q: "Das Wort 'Astronaut' leitet sich aus dem Griechischen ab. Was bedeutet es?",
-            points: 1,
+            points: 8,
             ansA: "Sternenschiffer", 
             ansB: "Raumläufer",
             ansC: "Sternenschwimmer",
