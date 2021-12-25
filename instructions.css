@@ -1,0 +1,86 @@
+html{
+    width: 100vw;
+}
+
+body{
+    background: rgb(27, 27, 27);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.all{
+    position: absolute;
+
+    width: 90vw;
+    height: 99vh;
+
+    left: 5vw;
+    top: 30vh;
+}
+
+
+.title{
+    position: absolute;
+
+    width: 98vw;
+    height: 20vh;
+
+    top: 5vh;
+    left: 1vw;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7vh;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+    background-image: linear-gradient(120deg,#d57eeb 0%, #fccb90 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;     
+}
+
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    text-align: left;
+    background-image: linear-gradient(120deg, #67fd9e 0%, #52c3fc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.extra{
+    position: absolute;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    text-align: left;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+}
+
+u{
+    text-decoration: underline rgb(255, 147, 45);
+}
+
+a{  
+    position: absolute;
+    width: 90vw;
+    top: 87vh;
+    left: 0vw;
+    text-align: left;
+    text-decoration: underline rgb(255, 147, 45);
+}
+

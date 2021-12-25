@@ -28,15 +28,15 @@ let pp = score/max;
 
 //set catchphrases
 if(pp < 0.2){
-cp.innerText = "Kopf hoch - aus Fehlern lernt man! Bei Ihnen ist es dafür allerdings bereits zu spät."
+cp.innerText = "Kopf hoch - aus Fehlern lernt man! Beim nächsten mal wird's besser!."
 } 
 
 if(pp >= 0.2 && pp < 0.4){
-cp.innerText = "Für den Anfang gar nicht mal so gut. Da kommt doch noch was -- Oder!?"    
+cp.innerText = "Für den Anfang gar nicht mal so schlecht. Da kommt aber noch was -- Oder!?"    
 }  
 
 if(pp >= 0.4 && pp < 0.6){
-cp.innerText = "Auffällig unauffällig! Das könnte noch was werden!"    
+cp.innerText = "Auffällig unauffällig! Darauf können wir aufbauen!"    
 } 
 if(pp >= 0.6 && pp < 0.8){
 cp.innerText = "Sie sind auf bestem Wege, zum Quizz-Master aufzusteigen! Weiter so!"   
@@ -47,12 +47,12 @@ cp.innerText = "Welch unfassbare Leistung! Ihre Freunde können stolz auf sie se
 } 
 
 if(pp == 1){
-cp.innerText = "Wer's glaubt wird seelig! Gehen Sie ins Gefängnis, gehen Sie nicht über 'Los', ziehen sie keine 200$ ein!"
+cp.innerText = "Das ist ja unglaublich! Wenn sie das ohne Hilfsmittel geschafft haben sind sie vorerst Quizz-Master. Wenn nicht, dann: Gehen Sie ins Gefängnis, gehen Sie nicht über 'Los', ziehen sie keine 200$ ein!"
 }
 
-if(converted == true && time >= 20){
+if(converted == true && time >= 25){
 cp.innerText = "Das muss doch auch schneller gehen! Geben Sie sich weiter Mühe!"
 }
-if(converted == true && time >= 30){
+if(converted == true && time >= 35){
 cp.innerText = "ENDLICH! - Ich dachte schon, Sie würden mir den Feierabend streichen! Legen sie zwei Zähne zu!!"
 }

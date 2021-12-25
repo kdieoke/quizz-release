@@ -25,6 +25,7 @@ let a;
 let b;
 let c;
 let d;
+let ret = false;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -195,28 +196,6 @@ console.log("CORRECT:" + questions[level][question].correct)
 console.log("RECIEVED ANSWER:" + ans)
 console.log("POINTS::" + points + "..." + questions[level][question].points)
 
-//new round
-round++;
-
-//check if quizz has ended
-if(round > max) {
-
-//end timer
-let end = Date.now();
-
-//save time
-localStorage.setItem('Time', `${(Math.floor((end-time)/1000))}`)
-
-//save full_points 
-localStorage.setItem("full-points", full_points)
-
-//send to quizz_end
-location.replace("quizz_end.html");
-
-//end quizz_q.js
-return;
-}
-
 //delete question from question pool
 if(level == "easy") easy.splice(q_num_easy, 1), console.log("EASY[]::" + easy);
 if(level == "medium") medium.splice(q_num_medium, 1), console.log("MEDIUM[]::" + medium);
@@ -230,6 +209,29 @@ displaySolution(iscorrect)
 //increase diff and update level
 checkdiff();
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function endquizz(){
+    //check if quizz has ended
+    if(round == max) {
+    
+    //end timer
+    let end = Date.now();
+    
+    //save time
+    localStorage.setItem('Time', `${(Math.floor((end-time)/1000))}`)
+    
+    //save full_points 
+    localStorage.setItem("full-points", full_points)
+    
+    //send to quizz_end
+    location.replace("quizz_end.html");
+    
+    //end quizz_q.js
+    ret = true;
+    }
+    }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -284,12 +286,17 @@ Advice.innerText = 'Drücken Sie eine beliebige Taste um fortzufahren!'
 if(iscorrect) Q.innerText = "Richtig!";
 if(!iscorrect) Q.innerText = `Falsch! Richtig wäre:  ${correct}) ${correctAns}`
 
-
+//add keypress and touch eventListeners
 document.addEventListener("keypress", end);
 document.addEventListener("touchstart", end)
 
+
+//change infoScreen to qScreen
 function end(){
 
+//check if quizz has already ended
+endquizz();
+if(ret == true) return;
 
 //read answers
 let newA = document.createElement("div")
@@ -341,17 +348,20 @@ void this.offsetWidth
 Info.remove();
 Advice.remove();
 
+//renew Eventlisteners for answers
 setListeners();
 
+//remove eventListeners
 document.removeEventListener("keypress", end)
 document.removeEventListener("touchstart", end)
 
+//new round
+round++;
+
+//check the diff and enter new round
 checkdiff();
 displayQ();
-
-}
-
-}
+}}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -395,7 +405,7 @@ let questions = {
         },
         q2:{
             name: "q2",
-            q: "Wie viele Nachbarländer hat Deutschland",
+            q: "Wie viele Nachbarländer hat Deutschland?",
             points: 1,
             ansA: "8", 
             ansB: "12",
@@ -442,7 +452,7 @@ let questions = {
         },
         q6:{
             name: "q6",
-            q: "Das englische Wort 'rural' meint: ",
+            q: "Das englische Wort 'rural' meint?",
             points: 1,
             ansA: "ruhig", 
             ansB: "(be)-herrschen",
@@ -499,7 +509,7 @@ let questions = {
         },
         q11:{
             name: "q11",
-            q: "Die Wurzel aus 625 ist",
+            q: "Die Wurzel aus 625 ist?",
             points: 1,
             ansA: "25", 
             ansB: "5",
@@ -522,7 +532,7 @@ let questions = {
         },
         q13:{
             name: "q13",
-            q: "Das englishe Wort 'obvious' meint:",
+            q: "Das englishe Wort 'obvious' meint?",
             points: 1,
             ansA: "offensichtlich", 
             ansB: "unwissend",
@@ -537,7 +547,7 @@ let questions = {
             points: 1,
             ansA: "alle 2 Jahre", 
             ansB: "viermal im Jahr",
-            ansC: "nervig",
+            ansC: "alle 4 Jahre",
             ansD: "jedes Jahr",
             correct: "A",
             info: "Die olympischen Sommer Spiele sowie auch die olympischen Winterspiele finden alle 4 Jahre statt. Allerdings wechseln sie sich praktisch ab. So (sollten) die letzten olympischen Sommerspiele 2020 und die nächsten olympischen Winterspiele 2022 stattfinden.",
@@ -581,7 +591,7 @@ let questions = {
         },        
         q18:{
             name: "q18",
-            q: "Das englische Wort 'obvious' meint:",
+            q: "Das englische Wort 'obvious' meint?",
             points: 1,
             ansA: "offensichtlich", 
             ansB: "unwissend",
@@ -592,7 +602,7 @@ let questions = {
         },
         q19:{
             name: "q19",
-            q: "Wie viele Geburtstage hat der Mensch? (im Durchschnitt)",
+            q: "Wie viele Geburtstage hat der Mensch (im Durchschnitt)?",
             points: 1,
             ansA: "1", 
             ansB: "80",
@@ -657,7 +667,7 @@ let questions = {
             ansC: "940 Meter",
             ansD: "720 Meter",
             correct: "B",
-            info: "Das höchste menschengemachte Objekt ist der Burj Khalifa. Der 829 Meter hohe Wolkenkratzer steht in Dubai, den Vereinigten Arabischen Emiraten",
+            info: "Das höchste menschengemachte Objekt ist der Burj Khalifa. Der 829 Meter hohe Wolkenkratzer steht in Dubai, den Vereinigten Arabischen Emiraten.",
             b_img: "hochhaeuser.jpg" 
         },
         q25:{
@@ -826,7 +836,7 @@ let questions = {
             ansC: "1955",
             ansD: "1957",
             correct: "B",
-            info: "Also erst 16 Jahre nach Kriegsende.",
+            info: "Also ganze 16 Jahre nach Kriegsende.",
             b_img: "BerlinerMauer.jpg"
         },
         q9:{
@@ -843,7 +853,7 @@ let questions = {
         },  
         q10:{
             name: "q10",
-            q: "Welche Flagge trägt die Farben Orange-Weiß-Grün (beachte Reihenfolge)",
+            q: "Welche Flagge trägt die Farben Orange-Weiß-Grün (beachte Reihenfolge)?",
             points: 1,
             ansA: "Äthiopien", 
             ansB: "Elfenbeinküste",
@@ -879,12 +889,12 @@ let questions = {
             ansC: "50.000.000.000",
             ansD: "500.000.000",
             correct: "A",
-            info: "Im Dezember 2021 erreichte das beliebte Computerspiel Minecraft die eine Billionen Videoaufrufe auf YouTube",
+            info: "Im Dezember 2021 erreichte das beliebte Computerspiel Minecraft die eine Billionen Videoaufrufe auf YouTube.",
             b_img: "minecraft.jpg"
         },
         q3:{
             name: "q3",
-            q: "Worum handelt es sich in der Literatur bei 'Neologismus' (reheorisches Mittel) ",
+            q: "Worum handelt es sich in der Literatur bei 'Neologismus' (rehetorisches Mittel)?",
             points: 1,
             ansA: "Beschönigung", 
             ansB: "Wortneuschaffung",
@@ -938,7 +948,7 @@ let questions = {
             ansC: "Antarktis",
             ansD: "Sahara",
             correct: "C",
-            info: "Unter Wüste versteht man: Aufgrund von Trockenheit vegetationslose oder vegetationsarme Gebiete der Erde",
+            info: "Unter Wüste versteht man: Aufgrund von Trockenheit vegetationslose oder vegetationsarme Gebiete der Erde.",
             b_img: "oedland.jpg"
         },
         q8:{
@@ -962,12 +972,12 @@ let questions = {
             ansC: "Judentum",
             ansD: "Hinduismus",
             correct: "B",
-            info: "Religionen nach Anhängeranzahl: 1.Christentum, 2.Islam, 3.Budhismus, 4.Hinduismus, 5.Judentum",
+            info: "Religionen nach Anhängeranzahl: 1.Christentum, 2.Islam, 3.Budhismus, 4.Hinduismus, 5.Judentum.",
             b_img: "moshee.jpg"
         },
         q10:{
             name: "q10",
-            q: "Wie lautet der zweit-häufigste Straßenname in Deutschland",
+            q: "Wie lautet der zweit-häufigste Straßenname in Deutschland?",
             points: 1,
             ansA: "Bergstraße", 
             ansB: "Hauptstraße",
@@ -1014,12 +1024,12 @@ let questions = {
             ansC: "Medizinischer Ausdruck",
             ansD: "Verletzung des Magens",
             correct: "B",
-            info: "Unter semantischer Sättigung versteht man den Bedeutungsverlust/Bedeutungswandel eines Wortes nach zu vielen Wiederholungen dieses Worts",
+            info: "Unter semantischer Sättigung versteht man den Bedeutungsverlust/Bedeutungswandel eines Wortes nach zu vielen Wiederholungen dieses Worts.",
             b_img: "buecherregal.jpg"
         },
         q4:{
             name: "q4",
-            q: "Wer soll angeblich gesagt haben: 'Ich kann garnicht so viel fressen, wie ich kotzen möchte '",
+            q: "Wer soll angeblich gesagt haben: 'Ich kann garnicht so viel fressen, wie ich kotzen möchte'?",
             points: 1,
             ansA: "Max Liebermann", 
             ansB: "Kurt Tucholsky",
@@ -1034,14 +1044,14 @@ let questions = {
     legy:{
         q1:{
             name: "q1",
-            q: "wie schreibt man 's o v i e l' in 'Ich möchte ... schlafen wie möglich'?",
+            q: "wie schreibt man 's o v i e l' in 'Ich möchte [s o v i e l] schlafen wie möglich'?",
             points: 1,
             ansA: "soviel", 
-            ansB: "beides ist möglich",
+            ansB: "alles ist möglich",
             ansC: "so viel",
             ansD: "so-viel",
             correct: "C",
-            info: "Beide Schreibweisen werden heute gebraucht. Allerdings schreibt man 'soviel' nur wenn es sich um eine Konjunktion handelt",
+            info: "Sowohl 'soviel' als auch 'so viel' wird heute noch gebraucht. Allerdings schreibt man 'soviel' nur wenn es sich um eine Konjunktion handelt.",
             b_img: "buecherregal.jpg"
         },
         q2:{
@@ -1069,7 +1079,7 @@ let questions = {
         },
         q4:{
             name: "q4",
-            q: "Das Wort 'Astronaut leitet sich aus dem Griechischen ab. Was bedeutet es?",
+            q: "Das Wort 'Astronaut' leitet sich aus dem Griechischen ab. Was bedeutet es?",
             points: 1,
             ansA: "Sternenschiffer", 
             ansB: "Raumläufer",
